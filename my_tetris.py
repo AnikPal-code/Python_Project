@@ -1,3 +1,5 @@
+# This is one my favorite game out there
+import pygame
 class Figure:
     figures = [
         [[1, 5, 9, 13], [4, 5, 6, 7]],
