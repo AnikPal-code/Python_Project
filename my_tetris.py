@@ -297,7 +297,7 @@ while not done:
 
     if game.figure is not None:
         for i in range(4):
-            for j in range(4):
+            for j in range(4): #
                 p = i * 4 + j
                 if p in game.figure.image():
                     pygame.draw.rect(screen, colors[game.figure.color],
