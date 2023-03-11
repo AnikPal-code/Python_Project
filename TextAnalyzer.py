@@ -39,5 +39,4 @@ print("LOOKING FOR THE WORD 'PYTHON' IN TEXT")
 is_python = 'python' in text
 dt = {True: 'is', False: 'is not'}
 print(f"The word 'python' {dt[is_python]} present")
-
-
+print("\n")
