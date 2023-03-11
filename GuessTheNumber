@@ -1,0 +1,22 @@
+# 8 tries and print how many tries they have taken
+from random import randint
+name = input("Enter your name: ")
+num = 0
+print(f"Hello {name}, Welcome to this Guessing Game where you need to guess the magic number")
+lucky_num = randint(1, 100)
+i = 1
+while i <= 8:
+    num = int(input("Guess the number: "))
+    i += 1
+    if (num > 100 or num < 1):
+        print("Your number is out of bounds.")
+    elif (num > lucky_num):
+        print("You have chosen a higher number than the magic number")
+    elif (num < lucky_num):
+        print("You have chosen a lower number than then magic number")
+    else:
+        print(f"Congrats {name}, You have guess the number {lucky_num} in {i} attempts.")
+        break
+if (num != lucky_num):
+    print(f"Sorry, You have exhausted all attempts, the correct number was {lucky_num}")
+
